@@ -29,6 +29,7 @@ public class GroupAdmin implements Sender {
     @Override
     public void register(Member obj) {
         members.add(obj);
+        obj.update(stringBuilder);
     }
 
     /**
@@ -37,6 +38,7 @@ public class GroupAdmin implements Sender {
      */
     @Override
     public void unregister(Member obj) {
+        obj.update(null);
         members.remove(obj);
     }
     /**

@@ -1,6 +1,6 @@
 package observer;
 
-public class MM {
+/*public class MM {
 
     public static void main(String[] args) {
         GroupAdmin g = new GroupAdmin();
@@ -17,3 +17,5 @@ public class MM {
     }
 
 }
+
+ */
