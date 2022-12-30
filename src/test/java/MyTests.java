@@ -146,26 +146,5 @@ public class MyTests {
             printfunc();
         }
 
-        @Test
-        public void checkTests(){
-            GroupAdmin groupA=new GroupAdmin();
-            ConcreteMember m1=new ConcreteMember("Alice");
-            ConcreteMember m2=new ConcreteMember("Bob");
-            logger.info(()->JvmUtilities.objectFootprint(tester,m1,m2));
-            logger.info(()->JvmUtilities.objectTotalSize(tester,m1,m2));
-            tester.register(m1);
-            tester.register(m2);
-            logger.info(()->JvmUtilities.objectFootprint(tester));
-            logger.info(()->JvmUtilities.objectTotalSize(tester));
-            tester.append("-------");
-            logger.info(()->JvmUtilities.objectFootprint(tester));
-            logger.info(()->JvmUtilities.objectTotalSize(tester));
-            tester.unregister(m2);
-            logger.info(()->JvmUtilities.objectFootprint(tester));
-            logger.info(()->JvmUtilities.objectTotalSize(tester));
-            logger.info(JvmUtilities::jvmInfo);
-            tester.insert(0,"test");
-            logger.info(()->JvmUtilities.memoryStats(tester));
-        }
-    }
+}
 
