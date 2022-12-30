@@ -7,7 +7,7 @@ import org.junit.platform.commons.logging.LoggerFactory;
 import observer.JvmUtilities;
 import org.junit.jupiter.api.*;
 public class MyTests {
-    public static final Logger logger = LoggerFactory.getLogger(Tests.class);
+    public static final Logger logger = LoggerFactory.getLogger(MyTests.class);
     // stub method to check external dependencies compatibility
 
     static GroupAdmin tester;
